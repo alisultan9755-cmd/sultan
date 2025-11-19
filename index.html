@@ -1,6 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+	background-color: powderblue;
+	font-family: Arial;
+	color: black;
+	text-align: center;
+     }
+header {
+	background-color: tomato;
+	color: white;
+	text-align: center;
+	padding: 20px;
+     }
+h1 {
+	color: navy;
+	font-size: 36px;
+   }
+
+p {
+	font-size: 18px;
+  }
+
+img {
+	width: 180px;
+	height:  180px;
+	border-radius: 50%;
+	border: 3px solid gray;
+	margin-top: 10px;
+    }
+
+
+.table-style1 {
+	width: 80%;
+	margin: 20px auto;
+	border: 2px solid navy;
+
+ }
+.table-style1 th, .table-style1 td {
+	border: 1px solid navy;
+	padding: 10px;
+	text-align: center;
+}
+
+.table-style1 th {
+	background-color: lightgreen;
+  }
+.table-style2 {
+	width: 60%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	border: 2px solid darkgreen;
+ }
+
+.table-style2 th .table-style2 td {
+	border: 1px solid darkgreen;
+	padding: 10px;
+	text-align: center;
+ }
+.table-style2 th {
+	background-color: lightgreen;
+}
+
+.about {
+	width: 60%;
+	margin: 20px auto;
+	text-align: left;
+ }
+
+div.mycontainer {
+	width: 66%;
+	overflow: auto;
+}
+div.mycontainer  div { 
+	width: 50%;
+	float: left;
+}
+
+.video {
+	width: 40%;
+	margin: 55px auto;
+	text-align: center;
+	border: 3px solid gray;
+  }
+
+.list-style1 {
+	list-style-type: square;
+	color: darkblue;
+	text-align: left;
+	margin: 20px;
+}
+
+.list-style2 {
+	list-style-type: circle;
+	color: darkgreen;
+	text-align: left;
+	margin: 20px;
+}
+
+
+
+</style>
+
+	
   <title>My Personal Webpage</title>
 </head>
   <body>
@@ -13,7 +116,7 @@ Age: 24
 Location: Kansas City, MO
 </pre>
     </header>
-<section>
+<section class="about">
 <p>Check out my favorite website:
 <a href="https://tryhackme.com/"target="_blank">Try hack me site</a>
 </p>
@@ -25,7 +128,7 @@ Location: Kansas City, MO
 <hr>
 
 <h2>My Hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -39,7 +142,7 @@ Location: Kansas City, MO
 </tr>
 </table>
 <h2>My Favorite Movie</h2>
-<table>
+<table  class="table-style2">
 <tr>
 <th> Movie</th>
 <th> Year</th>
@@ -50,21 +153,27 @@ Location: Kansas City, MO
 </tr>
 </table>
 <hr>
+<div class="mycontainer">
+<div>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class="list-style1">
 <li>Burger</li>
 <li>shawarma</li>
 <li>Pizza</li>
 </ul>
-<hr>
+</div>
+<div>
 <h2>My Favorite Drink</h2>
-<ul>
+<ul class="list-style2">
 <li>Tea</li>
 <li>Soda</li>
 <li>Water</li>
 </ul>
+</div>
+</div>
+
 <hr>
-<section>
+<section class="video">
 <h2>My Favorite Video</h2>
 <video width="480" height="360" controls>
 <source src="https://github.com/alisultan9755-cmd/sultan/blob/main/Cats%20Video.mp4?raw=True">
@@ -73,7 +182,9 @@ Your browser does not support the video tag.
 </section>
 <hr>
 
-<h2>Embedded Website</h2><iframe width="1003" height="564" src="https://www.youtube.com/embed/0n0NnD95lTY?list=RD0n0NnD95lTY"</iframe>
+<h2>Embedded Website</h2>
+<iframe width="1003" height="564" src="https://www.youtube.com/embed/0n0NnD95lTY?list=RD0n0NnD95lTY"</iframe>
+
 
   </body>
 </html>
